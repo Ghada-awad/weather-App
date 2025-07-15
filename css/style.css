@@ -1,0 +1,291 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* :root {
+    font-size: 14px;
+
+} */
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #bfc1c8;
+
+}
+
+nav ul {
+    display: none;
+    margin-top: 30px;
+    background-color: #262936;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 12px;
+
+
+}
+
+.nav-padding {
+    padding: 50px 30px;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #fff;
+    font-size: 22px;
+    transform: translateX(-50%);
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-dark-blue {
+    background-color: #1e202b;
+}
+
+.content-nav {
+    width: 82%;
+}
+
+.logo-img {
+    width: 64px;
+    height: 38px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.site-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-size: 1.1428571429em;
+    color: white;
+    font-weight: 700;
+}
+
+.site-description {
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+
+ul li {
+    padding: 20px 15px;
+    border-bottom: 1px solid #3d3d40;
+}
+
+ul li a {
+    padding: 5px 25px;
+    color: #fff;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.menu-home {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.midel-page {
+    background-image: url("../images/banner.png");
+    background-color: #1e202b;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-size: cover; */
+    padding: 70px 0;
+    /* height: 100vh; */
+}
+
+.find-location {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.find-location input {
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.find-location input[type="text"] {
+    width: 100%;
+    background-color: #1e202b;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: #fff;
+}
+
+.find-location input[type="submit"] {
+    background-color: #009ad8;
+    padding: 0 40px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    color: #fff;
+
+}
+
+.forcast-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.city-name {
+    font-size: 1.2857142857em;
+    font-weight: 400;
+}
+
+.today-degree {
+    font-size: 3.4285714286rem;
+    margin-right: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.type-of-weather {
+    color: #009ad8;
+    text-transform: capitalize;
+    margin: 20px 0 10px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.today-forcast,
+.third-day {
+    background-color: #323544;
+}
+
+.today-forcast .header,
+.third-day .header {
+    background-color: #2d303d;
+}
+
+.secound-day .header {
+    background-color: #222530;
+}
+
+.secound-day,
+.third-day {
+    height: 250px;
+}
+
+.secound-day {
+    background-color: #262936;
+}
+
+.main-second-day,
+.main-third-day {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.degree {
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+
+.custom {
+    color: #009ad8;
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #262936;
+}
+
+footer .hyper-links-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 1.4285714286em;
+
+}
+
+@media (min-width:991px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .content-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e202b;
+        margin-top: 0;
+    }
+
+    ul li {
+        margin-right: 10px;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    ul li a {
+        padding: 5px 25px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 5px 25px;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        color: white;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .secound-day,
+    .third-day {
+        height: auto;
+    }
+
+    .custom {
+        margin: 20px 0;
+
+    }
+
+    .main-second-day,
+    .main-third-day {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+}
